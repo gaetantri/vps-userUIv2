@@ -1,7 +1,7 @@
 <?php
-require("./pve2-api-php-client/pve2_api.class.php");
+require("pve2_api.class.php");
 
-$pve2 = new PVE2_API("hostname", "username", "realm", "password");
+$pve2 = new PVE2_API("10.10.10.1", "demo-vps", "pve", "Bonjour");
 # realm above can be pve, pam or any other realm available.
 
 if ($pve2->constructor_success()) {
