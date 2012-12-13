@@ -11,7 +11,8 @@ if ($pve2->constructor_success()) {
     // $pve2->set_debug(true);
 
     if ($pve2->login()) {
-        foreach ($pve2->get_node_list() as $node_name) {
+	echo "OK. Listing nodes\n";
+      foreach ($pve2->get_node_list() as $node_name) {
             print_r($pve2->get("/nodes/".$node_name."/status"));
         }
     } else {
