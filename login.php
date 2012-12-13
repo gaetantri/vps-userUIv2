@@ -1,12 +1,10 @@
 <?php
-echo "Test1\n";
+
 error_reporting(E_ALL);
-require("pve2_api.class.php");
-echo "Test2\n";
+include("pve2_api.class.php");
 
 $pve2 = new PVE2_API("10.10.10.1", "demo-vps", "pve", "Bonjour");
 # realm above can be pve, pam or any other realm available.
-echo "Test3\n";
 if ($pve2->constructor_success()) {
     /* Optional - enable debugging. It print()'s any results currently */
     // $pve2->set_debug(true);
