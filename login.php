@@ -1,5 +1,6 @@
 <?php
 echo "Test1\n";
+error_reporting(E_ALL);
 require("pve2_api.class.php");
 echo "Test2\n";
 
